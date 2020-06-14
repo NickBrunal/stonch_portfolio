@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useRoutes } from 'hookrouter';
+import { Navbar } from './components/Navbar';
+import { Wrapper } from './components/Wrapper';
+import { Home } from './pages/Home';
+import { About } from './pages/About';
+import { Contact } from './pages/Contact';
+import { NotFound } from './pages/NotFound';
+import { Portfolio } from './pages/Portfolio';
+
+import './App.scss';
+
+const routes = {
+  '/': () => <Home />,
+  '/about*': () => <About />,
+  '/contact': () => <Contact />,
+  '/portfolio': () => <Portfolio />,
+}
 
 function App() {
+  const match = useRoutes(routes)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Wrapper className="App-Wrapper">
+        <Navbar />
+        {match || <NotFound />}
+      </Wrapper>
     </div>
   );
 }
