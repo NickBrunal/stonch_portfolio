@@ -3,34 +3,35 @@
     grid-template-columns: 1fr;
 
     border-style: inset;
-    border-radius: 1px;
-    border-width: 80px;
+    border-width: 75px;
 
-    height: 100vh;
+    height: 70vh;
     width: auto;
     object-fit: cover;
 
     .HomeContainer-gallery {
         background-size: cover;
-
-        .HomeContainer-left-button {
-            display: flex;
-    
-            .scroll-left {
-                justify-content: center;
-                align-items: left;
-                padding-top: 500px;
-            }
-        }
-        .HomeContainer-right-button {
-            display: flex;
-    
-            .scroll-right {
-                justify-content: center;
-                align-items: right;
-                float: right;
-            }
-        }
+        
     }
 
+    .HomeContainer-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 350px;
+        
+        
+
+        &__left {
+            
+            
+        }
+
+        &__right {
+            
+            
+        }
+
+    }
+    
 }

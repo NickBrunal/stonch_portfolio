@@ -6,18 +6,21 @@ export const HomeContainer = () => {
         <div className="HomeContainer-wrapper">
 
             <div className="HomeContainer-gallery" style={{ backgroundImage: `url(${backgroundImage})` }}>
-                <div className="HomeContainer-left-button">
-                    <div className="scroll-left">
+
+                <div className="HomeContainer-button">
+
+                    <div className="HomeContainer-button__left">
+                        <button>Arrow</button>
+                    </div>
+
+                    <div className="HomeContainer-button__right">
                         <button>Arrow</button>
                     </div>
                 </div>
 
-                <div className="HomeContainer-right-button">
-                    <div className="scroll-right">
-                        <button>Arrow</button>
-                    </div>
-                </div>
             </div>
+
+
 
 
         </div>
