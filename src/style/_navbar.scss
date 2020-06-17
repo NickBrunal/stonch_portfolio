@@ -1,19 +1,16 @@
 .Navbar-wrapper {
     display: flex;
     justify-content: center;
-
     background-color: gray;
     padding: 75px;
 
     .Right-side {
         display: inline;
         padding-left: 50px;
-
       }
     
     .Navbar-links-wrapper {
         height: 30px;
-
         text-transform: capitalize;
         font-size: 0.9rem;
     }

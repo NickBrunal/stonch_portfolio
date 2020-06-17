@@ -17,12 +17,7 @@ export const HomeContainer = () => {
                         <button>Arrow</button>
                     </div>
                 </div>
-
             </div>
-
-
-
-
         </div>
     )
 }
