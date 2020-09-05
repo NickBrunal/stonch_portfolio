@@ -1,14 +1,34 @@
-
 body {
   margin: 0px;
   font-family: "Titillium Web", sans-serif;
-  background-color: lightblue;
+  
 }
 
-.container {
+.App {
   display: grid;
   grid-template-columns: 1fr;
+
+  background-image: url('../static/assets/images/background/Saintpete_skyline.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+
+  position: relative;
 }
 
+.Navbar_Background {
+  display: grid;
+  grid-template-columns: 1fr;
 
+  padding-top: 125px;
+  padding-bottom: 250px;
+  
+  background-image: url('../static/assets/images/logos/LOGOSTAMPwhite.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  
 
+  
+}

@@ -1,37 +1,7 @@
-.HomeContainer-wrapper{
-    display: grid;
-    grid-template-columns: 1fr;
-
-    border-style: inset;
-    border-width: 75px;
-
-    height: 70vh;
-    width: auto;
-    object-fit: cover;
-
-    .HomeContainer-gallery {
-        background-size: cover;
-        
-    }
-
-    .HomeContainer-button {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 320px;
-        
-        
-
-        &__left {
-            
-            
-        }
-
-        &__right {
-            
-            
-        }
+ .HomeContainer {
+     
+    .HomeContainer-wrapper {
 
     }
-    
+        
 }

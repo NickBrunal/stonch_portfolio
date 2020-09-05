@@ -3,18 +3,16 @@ import { useRoutes } from 'hookrouter';
 import { Navbar } from './components/Navbar';
 import { Wrapper } from './components/Wrapper';
 import { Home } from './pages/Home';
-import { About } from './pages/About';
 import { Contact } from './pages/Contact';
 import { NotFound } from './pages/NotFound';
-import { Portfolio } from './pages/Portfolio';
+import { Login } from './pages/Login'
 
 import './App.scss';
 
 const routes = {
   '/': () => <Home />,
-  '/about*': () => <About />,
   '/contact': () => <Contact />,
-  '/portfolio': () => <Portfolio />,
+  '/auth': () => <Login />
 }
 
 function App() {
